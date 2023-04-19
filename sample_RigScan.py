@@ -18,7 +18,7 @@ from decimal import ROUND_HALF_UP,ROUND_HALF_EVEN
 import subprocess
 from collections import Counter
 
-from SysPrep4G16 import main as G16
+from util.SysPrep4G16 import main as G16
 
 logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.INFO)
 
