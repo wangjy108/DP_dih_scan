@@ -127,7 +127,7 @@ if __name__ == '__main__':
                         help='input sdf file')
     parser.add_argument("--mode", type=str, required=True,
                         help="run mode, ['setup', 'run_scan']")
-    parser.add_argument("--lbg_project_id", type=int, default=10533, 
+    parser.add_argument("--lbg_project_id", type=int, default=2273, 
                         help="if use lbg for calc define available project id, default is DPDH public 10533")
     
     args = parser.parse_args()
