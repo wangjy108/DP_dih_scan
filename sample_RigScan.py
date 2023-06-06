@@ -88,7 +88,7 @@ class main():
             "disk_size": 128,
             "machine_type": f"{self.machine_type}",
             "job_type": "container",
-            "image_name": "registry.dp.tech/dptech/prod-1364/dihscan:run0.0.2"
+            "image_name": "registry.dp.tech/dptech/prod-1364/dihscan:run0.0.3"
         }
 
         with open("input.json", "w+") as cc:
