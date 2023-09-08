@@ -34,7 +34,7 @@ class main():
         try:
             self.project_id = int(args["lbg_project_id"])
         except Exception as e:
-            self.project_id = 10533
+            self.project_id = 2273
 
 
         config = configparser.ConfigParser()
@@ -88,7 +88,7 @@ class main():
             "disk_size": 128,
             "machine_type": f"{self.machine_type}",
             "job_type": "container",
-            "image_name": "registry.dp.tech/dptech/prod-1364/dihscan:run0.0.4"
+            "image_name": "registry.dp.tech/dptech/prod-1364/dihscan:lbg_run0.0.1"
         }
 
         with open("input.json", "w+") as cc:
@@ -128,7 +128,7 @@ if __name__ == '__main__':
     parser.add_argument("--mode", type=str, required=True,
                         help="run mode, ['setup', 'run_scan']")
     parser.add_argument("--lbg_project_id", type=int, default=2273, 
-                        help="if use lbg for calc define available project id, default is DPDH public 10533")
+                        help="if use lbg for calc define available project id, default is DPDH public 2273")
     
     args = parser.parse_args()
 
