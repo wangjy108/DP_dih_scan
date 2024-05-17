@@ -204,7 +204,7 @@ class main():
                 (_, _) = subprocess.getstatusoutput(f"rm -rf {row['JOB_ID']}")
                 #transfer += [os.path.join(row["local_path"], dd) for dd in os.listdir(row["local_path"]) if os.path.isdir(dd)]
                 #should_delete.append(row["local_path"])
-                os.system("rm -f submission_track_list")
+                os.system("rm -f submission_track_list TRACK_JOB fort.* lbg*.sh")
                 logging.info("Done") 
             else:
                 logging.info("lbg job collection failed, check TRACK_JOB for more detail")
